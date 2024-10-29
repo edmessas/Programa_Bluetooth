@@ -1,2 +1,4 @@
 # Programa_Bluetooth
-O objetivo é criar um programa que monitora dispositivos que se conectam ao bluetooth do seu computador e te permitir aceitar a conexão ou cortá-la.
+### O objetivo é criar um programa que monitora dispositivos que se conectam ao bluetooth do seu computador e te permitir aceitar a conexão ou cortá-la.
+O programa atualmente é desenvolvido em Pythone e tem duas versões, ele foi originalmente feito usando a extensão OS para interagir com o sistema operacional, mas por ser mais limitado acabei migrando para a biblioteca subprocess, que nos permite acessar mais informações vindas dos canais de entrada e saída do computador, além de nos permitir executar comandos.
+Mas atualmente estou enfrentando dois problemas, o primeiro é que quando recuso o acesso do bluetooth e ele deveria cortar a conexão em vigor, oque não acontece, porém o código não retorna nenhum erro e apenas roda normalmente como se a ação fosse um sucesso. O segundo é que ele acessa toda a lista de dispositivos bluetooth do sistema, oque retorna também uma lista de ferramentas do próprio aparelho, e pergunta se quer manter a conexão.
